@@ -1,0 +1,184 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  position: relative;
+}
+
+#header {
+  position: relative;
+  top: 4em;
+  left: -18.5em;
+}
+
+.round-button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #23b14d;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  text-decoration: none;
+  margin-top: 20%;
+}
+
+.small-div,
+.large-div {
+  transition: all 0.5s;
+}
+
+.para {
+  position: relative;
+  transition: top 1s ease;
+}
+
+.small-div.hidden-small-div .para {
+  top: 0;
+}
+
+.small-div {
+  z-index: 2;
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+}
+
+.large-div {
+  flex: 2;
+  width: 0;
+  display: flex;
+}
+
+
+.small-div img,
+.large-div img {
+  max-width: 100%;
+}
+
+#content1 {
+  width: 500px;
+  word-wrap: break-word;
+  position: relative;
+  left: -30em;
+  top: -15em;
+  font-size: 18px;
+  font-weight: normal;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1px;
+}
+
+
+
+#content2 {
+  width: 600px;
+  word-wrap: break-word;
+  position: relative;
+  left: -30em;
+  top: -15em;
+  font-size: 18px;
+  font-weight: normal;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1px;
+}
+
+#backButton {
+  position: relative;
+  top: 8em;
+  left: -47em;
+  color: white;
+  background: black;
+}
+
+.solarImage1 {
+  height: 50%;
+  width: 80%;
+  position: relative;
+  top: 8em;
+  left: 3em;
+}
+
+#content {
+  position: relative;
+  left: 1em;
+}
+
+.hidden-small-div {
+  width: 0;
+}
+
+.text-overlay1 {
+  position: absolute;
+}
+
+.subText {
+  position: absolute;
+  top: 48%;
+  left: 20%;
+  font-size: 18px;
+  color: white;
+  font-family: 'Electrolize', sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), 4px 4px 6px rgba(255, 0, 0, 0.3);
+  white-space: nowrap;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 10%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  font-size: 36px;
+  font-family: 'Electrolize', sans-serif;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-style: italic;
+}
+
+.solarImage {
+  height: 50%;
+  width: 25%;
+  position: relative;
+  top: 15em;
+  left: 3em;
+  opacity: 1;
+  transition: transform 0.3s ease;
+}
+
+/* Hover styles */
+.solarImage:hover {
+  transform: scale(1.1);
+  opacity: 0.7;
+}
+
+.animationDiv {
+  position: relative;
+  transition: left 1s ease;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.pointerImage {
+  position: relative;
+  top: 3px;
+  left: 0em;
+  width: 15px;
+}
+
+.pointer {
+  position: relative;
+  top: -2em;
+  left: -8em;
+  font-style: italic;
+}
+
+.small-div.hidden-small-div .animationDiv {
+  left: 0;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Div Animation</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="small-div">
+      <img id="rightImage"
+        src="https://st.hzcdn.com/simgs/pictures/exteriors/18th-ave-city-homes-unit-c-mb-architecture-interiors-img~f8e1811b02588d32_14-2803-1-100fee4.jpg"
+        alt="Image">
+      <div class="text-overlay">
+        GREEN <br>
+        <p class="subText">Future Envisioned</p>
+      </div>
+    </div>
+    <button class="round-button" onclick="animateSmallDiv()">Click Here</button>
+    <div class="large-div">
+      <div class="animationDiv">
+        <div style="display: flex;margin-top: 15%;">
+          <h2>Solar panels get energy from the sun</h2>
+          <p id="content">
+            Home solar panels are often mounted on rooftops. Commercial or industrial installations are often on
+            trackers
+            mounted on the ground.
+          </p>
+        </div>
+        <div class="pointer">
+          <b>Learn More</b>
+          <img class="pointerImage" src="https://www.green.com.pg/dist/images/next-2.png"></img>
+        </div>
+        <div style="margin-top: -15%;">
+          <img class="solarImage"
+            src="https://img.freepik.com/free-photo/beautiful-alternative-energy-plant-with-solar-panels_23-2149192692.jpg?w=1060&t=st=1690105225~exp=1690105825~hmac=2d013ad527c2758fa78f268018ecd69f8ec465d5e8a7c66087b6aac8d971f7de"
+            alt="Image">
+          <img class="solarImage"
+            src="https://img.freepik.com/free-photo/solar-power-power-station_1387-161.jpg?size=626&ext=jpg"></img>
+          <img class="solarImage"
+            src="https://img.freepik.com/free-photo/beautiful-alternative-energy-plant-with-solar-panels_23-2149192692.jpg?w=1060&t=st=1690105225~exp=1690105825~hmac=2d013ad527c2758fa78f268018ecd69f8ec465d5e8a7c66087b6aac8d971f7de"
+            alt="Image">
+          <img class="solarImage"
+            src="https://img.freepik.com/free-photo/solar-power-power-station_1387-161.jpg?size=626&ext=jpg"></img>
+
+        </div>
+      </div>
+    </div>
+    <div id="main-div">
+      <div>
+        <button id="backButton" onclick="back()">Back</button>
+      </div>
+      <div>
+        <h1 id="header"> Powering Home</h1>
+      </div>
+      <img class="solarImage1"
+        src="https://as2.ftcdn.net/v2/jpg/05/19/44/59/1000_F_519445978_PEPYf1rgopUdcN31HobzIVv8RAaoqNRE.jpg"></img>
+      <div>
+        <p id="content1">Solar panels for heat are usually made from a box with a clear window on top. Pipes run through
+          the box. The pipes and the box are usually painted black because black absorbs more heat than other colors.
+          Photovoltaic solar panels are built to last about thirty years. So far, most of the solar panels, originally
+          created in the 1980's have not yet reached the end of their estimated lifespans.
+          <br><br>
+          Many of the solar panels which have expired, however, have been classified as hazardous waste. The used solar
+          panels that have not been considered dangerous can be recycled to create new solar panels.[1] Over 90% of the
+          solar panel is recyclable to create either new solar panels or scrap material.
+        </p>
+      </div>
+      <div id="content2">
+        <p>Solar panels have become much cheaper to use, compared to oil, diesel and liquified natural gas in parts of
+          Asia. Solar energy will soon become the main source of energy. Over the years many innovations have been made
+          to improve solar panels. Solar panels have been used for space exploration and are being developed to be able
+          to power cars. Along with this, scientists are developing solar cells in silicone to increase its convenience.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
