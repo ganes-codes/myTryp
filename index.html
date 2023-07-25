@@ -11,19 +11,19 @@
 <body>
   <div class="container">
     <div class="small-div">
-      <img id="rightImage"
+      <img style="position: relative;z-index: 1;" id="rightImage"
         src="https://st.hzcdn.com/simgs/pictures/exteriors/18th-ave-city-homes-unit-c-mb-architecture-interiors-img~f8e1811b02588d32_14-2803-1-100fee4.jpg"
         alt="Image">
-      <div class="text-overlay">
+      <div  class="text-overlay">
         GREEN <br>
         <p class="subText">Future Envisioned</p>
       </div>
+      <button class="round-button" onclick="animateSmallDiv()">Click Here</button>
     </div>
-    <button class="round-button" onclick="animateSmallDiv()">Click Here</button>
-    <div class="large-div">
+    <div  class="large-div">
       <div class="animationDiv">
         <div style="display: flex;margin-top: 15%;">
-          <h2>Solar panels get energy from the sun</h2>
+          <h2 style="position: relative;left: 1em;">Solar panels get energy from the sun</h2>
           <p id="content">
             Home solar panels are often mounted on rooftops. Commercial or industrial installations are often on
             trackers
@@ -34,7 +34,7 @@
           <b>Learn More</b>
           <img class="pointerImage" src="https://www.green.com.pg/dist/images/next-2.png"></img>
         </div>
-        <div style="margin-top: -15%;">
+        <div id="capture" style="margin-top: -15%;">
           <img class="solarImage"
             src="https://img.freepik.com/free-photo/beautiful-alternative-energy-plant-with-solar-panels_23-2149192692.jpg?w=1060&t=st=1690105225~exp=1690105825~hmac=2d013ad527c2758fa78f268018ecd69f8ec465d5e8a7c66087b6aac8d971f7de"
             alt="Image">

@@ -28,12 +28,21 @@ body {
   font-size: 16px;
   text-decoration: none;
   margin-top: 20%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(50%, 50%);
+  z-index: 2;
+  cursor: pointer;
 }
+
 
 .small-div,
 .large-div {
   transition: all 0.5s;
 }
+
+
 
 .para {
   position: relative;
@@ -42,15 +51,29 @@ body {
 
 .small-div.hidden-small-div .para {
   top: 0;
+  width: 0;
+  height: 50%;
 }
 
 .small-div {
-  z-index: 2;
+  transition: max-width 0.5 ease;
   flex: 1;
   overflow: hidden;
   position: relative;
+  display: inline-block !important;
+  overflow: visible;
 }
 
+
+.small-div .round-button {
+  top: 20%;
+}
+
+#main-div {
+  opacity: 0; 
+  transform: translateX(100%); 
+  transition: opacity 0.5s ease, transform 0.5s ease; 
+}
 .large-div {
   flex: 2;
   width: 0;
@@ -92,9 +115,10 @@ body {
 #backButton {
   position: relative;
   top: 8em;
-  left: -47em;
+  left: -46em;
   color: white;
   background: black;
+  cursor: pointer;
 }
 
 .solarImage1 {
@@ -114,9 +138,13 @@ body {
   width: 0;
 }
 
+
+
 .text-overlay1 {
   position: absolute;
 }
+
+
 
 .subText {
   position: absolute;
@@ -139,6 +167,7 @@ body {
   color: #ffffff;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   font-style: italic;
+  z-index: 1;
 }
 
 .solarImage {
@@ -148,18 +177,19 @@ body {
   top: 15em;
   left: 3em;
   opacity: 1;
-  transition: transform 0.3s ease;
+  transition: transform 3s ease;
 }
 
-/* Hover styles */
+
+
 .solarImage:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
   opacity: 0.7;
 }
 
 .animationDiv {
   position: relative;
-  transition: left 1s ease;
+  transition: left 3s ease;
   display: flex;
   align-items: center;
   flex-direction: column;
