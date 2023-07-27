@@ -30,9 +30,7 @@ function animateSmallDiv() {
   var fadeButton = document.querySelector('.fadeInButton');
   var textDec = document.querySelector('.text-container');
 
-  // else {
-  //   fadeButton.style.opacity = '0';
-  // }
+
 
   smallDiv.classList.add('hidden-small-div');
   capture.classList.add('add-hover');

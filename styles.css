@@ -23,18 +23,14 @@ body {
   left: 5.8%;
   transform: translateX(-50%) translateY(100%);
   writing-mode: vertical-rl;
-  /* Vertical text from right to left */
   text-orientation: sideways;
-  /* Make the text start at bottom and end at top */
   transform: rotate(180deg);
 
-  /* text-orientation: upright;  */
   text-align: center;
   font-size: 48px;
   font-weight: bold;
   color: black;
   fill: #23b14d;
-  /* background-color: rgba(255, 255, 255, 0.7); */
   padding: 20px;
   height: 0%;
   line-height: 20.5;
@@ -42,21 +38,13 @@ body {
   letter-spacing: 32px;
   text-shadow:
     0 0 5px white,
-    /* White glow effect on dark backgrounds (e.g., blue) */
     0 0 5px white,
-    /* White glow effect on dark backgrounds (e.g., blue) */
     0 0 5px white,
-    /* White glow effect on dark backgrounds (e.g., blue) */
     0 0 5px white,
-    /* White glow effect on dark backgrounds (e.g., blue) */
     0 0 5px black,
-    /* Black glow effect on light backgrounds (e.g., white) */
     0 0 5px black,
-    /* Black glow effect on light backgrounds (e.g., white) */
     0 0 5px black,
-    /* Black glow effect on light backgrounds (e.g., white) */
     0 0 5px black,
-    /* Black glow effect on light backgrounds (e.g., white) */
     0 0 10px skyblue;
   opacity: 1;
 }
@@ -67,21 +55,13 @@ body {
   left: 11em;
   color: green;
   text-shadow: 0 0 5px white,
-    /* White glow effect on dark backgrounds (e.g., blue) */
     0 0 5px white,
-    /* White glow effect on dark backgrounds (e.g., blue) */
     0 0 5px white,
-    /* White glow effect on dark backgrounds (e.g., blue) */
     0 0 5px white,
-    /* White glow effect on dark backgrounds (e.g., blue) */
     0 0 5px black,
-    /* Black glow effect on light backgrounds (e.g., white) */
     0 0 5px black,
-    /* Black glow effect on light backgrounds (e.g., white) */
     0 0 5px black,
-    /* Black glow effect on light backgrounds (e.g., white) */
     0 0 5px black,
-    /* Black glow effect on light backgrounds (e.g., white) */
     0 0 10px skyblue;
 }
 
@@ -91,21 +71,13 @@ body {
   left: 22em;
   color: green;
   text-shadow: 0 0 5px white,
-    /* White glow effect on dark backgrounds (e.g., blue) */
     0 0 5px white,
-    /* White glow effect on dark backgrounds (e.g., blue) */
     0 0 5px white,
-    /* White glow effect on dark backgrounds (e.g., blue) */
     0 0 5px white,
-    /* White glow effect on dark backgrounds (e.g., blue) */
     0 0 5px black,
-    /* Black glow effect on light backgrounds (e.g., white) */
     0 0 5px black,
-    /* Black glow effect on light backgrounds (e.g., white) */
     0 0 5px black,
-    /* Black glow effect on light backgrounds (e.g., white) */
     0 0 5px black,
-    /* Black glow effect on light backgrounds (e.g., white) */
     0 0 10px skyblue;
 }
 
@@ -116,15 +88,12 @@ body {
 
 .image-container img {
   max-width: 100%;
-  /* vertical-align: top; */
   display: block;
   opacity: 0.8;
-  /* Adjust the opacity as needed */
 }
 
 #text {
-  /* height: 80px;
-  font-size: 20px; */
+
   animation: animat 1s linear infinite;
 }
 
