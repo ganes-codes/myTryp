@@ -10,8 +10,6 @@ for (var i = 1; i < ele.length; i++) {
 
 var pointer = document.querySelector('.pointer');
 
-
-
 function flipCoin() {
   const button = document.querySelector(".coin-button");
   button.classList.add("coin-flip");
@@ -26,12 +24,16 @@ function animateSmallDiv() {
   const largeDiv = document.querySelector('.large-div');
   const animationDiv = document.querySelector('.animationDiv');
   const para = document.querySelector('.para');
+  const content = document.getElementById('content');
   const capture = document.getElementById('capture');
   var fadeButton = document.querySelector('.fadeInButton');
   var textDec = document.querySelector('.text-container');
+  var solarImage = document.querySelectorAll('.solarImage');
 
-
-
+  solarImage.forEach(item => {
+    item.classList.add('new-class');
+    // item.style.height = '144px !important';
+  });
   smallDiv.classList.add('hidden-small-div');
   capture.classList.add('add-hover');
   if (smallDiv.classList.contains('hidden-small-div')) {
@@ -48,6 +50,7 @@ function animateSmallDiv() {
       mainDiv.style.opacity = '1';
       mainDiv.style.transform = 'translateX(0)';
       pointer.style.opacity = 0;
+      content.style.visibility = "hidden";
       if (fadeButton.style.opacity === '' || fadeButton.style.opacity === '0') {
         fadeButton.style.opacity = '1';
       }
@@ -63,7 +66,9 @@ function back() {
   const para = document.querySelector('.para');
   var fadeButton = document.querySelector('.fadeInButton');
   var pointer = document.querySelector('.pointer');
-  var textDec = document.querySelector('.text-container')
+  const content = document.getElementById('content');
+  var textDec = document.querySelector('.text-container');
+  var solarImage = document.querySelectorAll('.solarImage');
   animationDiv.style.left = "0";
   animationDiv.style.top = "30px";
   animationDiv.style.width = 'fit-content';
@@ -72,9 +77,14 @@ function back() {
   mainDiv.style.display = 'none';
   mainDiv.style.transform = 'translateX(100%)';
   setTimeout(() => {
-    pointer.style.opacity = "1"
+    solarImage.forEach(item => {
+      item.classList.remove('new-class');
+        item.style.height = ''
+    });
+    pointer.style.opacity = "1";
     mainDiv.style.display = 'none';
     fadeButton.style.opacity = '0';
+    content.style.visibility ="visible"
     textDec.style.marginLeft = "-7.7em"
   }, 500);
 }

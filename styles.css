@@ -92,10 +92,7 @@ body {
   opacity: 0.8;
 }
 
-#text {
 
-  animation: animat 1s linear infinite;
-}
 
 span {
   position: absolute;
@@ -103,21 +100,13 @@ span {
   bottom: 2.2em;
 }
 
-@keyframes animate {
-  from {
-    transform: rotate(0deg);
-  }
 
-  to {
-    transform: rotate(360deg);
-  }
-}
 
 .round-button {
   width: 90px;
   height: 90px;
   border-radius: 50%;
-  background-color: #23b14d;
+  background: linear-gradient(135deg, #b1ff4a, #25c8ff);
   color: #fff;
   display: flex;
   justify-content: center;
@@ -131,7 +120,7 @@ span {
   transform: translate(50%, 50%);
   z-index: 2;
   cursor: pointer;
-  border: none;
+  border: white;
   box-shadow: 0 2px 4px rgba(255, 255, 0, 0.5);
   font-family: 'Courier New', Courier, monospace;
 }
@@ -175,7 +164,7 @@ span {
 #main-div {
   opacity: 0;
   transform: translateX(100%);
-  transition: opacity 0.5s ease, transform 0.5s ease;
+  transition: opacity 0.5s ease, transform 3s ease;
 }
 
 .large-div {
@@ -198,8 +187,19 @@ span {
   top: -15em;
   font-size: 18px;
   font-weight: normal;
-  font-family: 'Montserrat', sans-serif;
   letter-spacing: 1px;
+  font-family: 'dancing spirit', cursive;
+  background-image: linear-gradient(45deg, #ff0000, black, #0000ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+
+}
+
+.solarImage.style-class {
+  /* display: inline-block; */
+  margin-right: 2em;
+  /* height: 114px !important; */
 }
 
 
@@ -212,8 +212,12 @@ span {
   top: -15em;
   font-size: 18px;
   font-weight: normal;
-  font-family: 'Montserrat', sans-serif;
+  background-image: linear-gradient(45deg, #ff0000, black, #0000ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
   letter-spacing: 1px;
+  font-family: 'dancing spirit', cursive;
 }
 
 #backButton {
@@ -252,11 +256,19 @@ span {
   position: relative;
   top: 8em;
   left: 3em;
+  box-shadow: 0 0 5px 3px rgba(154, 205, 50, 0.8),
+    0 0 8px 5px rgba(255, 255, 0, 0.6);
 }
 
 #content {
   position: relative;
+  background-image: linear-gradient(45deg, #ff0000, black, #0000ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-family: 'dancing spirit', cursive;
+  color: transparent;
   left: 2em;
+  font-size: 16px;
 }
 
 .hidden-small-div {
@@ -273,13 +285,17 @@ span {
 
 .subText {
   position: absolute;
-  top: 48%;
+  top: 53%;
   left: 20%;
   font-size: 18px;
-  color: white;
-  font-family: 'Electrolize', sans-serif;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), 4px 4px 6px rgba(255, 0, 0, 0.3);
+  color: #003300;
+  background: linear-gradient(135deg, #00ff00, #000);
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-shadow: 0 0 10px rgba(0, 255, 0, 0.8);
   white-space: nowrap;
+  font-family: 'dancing spirit', cursive;
+
 }
 
 .text-overlay {
@@ -287,22 +303,33 @@ span {
   top: 10%;
   left: 60%;
   transform: translate(-50%, -50%);
-  font-size: 36px;
-  font-family: 'Electrolize', sans-serif;
-  color: #ffffff;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  font-style: italic;
+  font-size: 48px;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  background-image: linear-gradient(45deg, red, green, yellow);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   z-index: 1;
 }
 
 .solarImage {
-  height: 50%;
+  height: 22em;
   width: 25%;
   position: relative;
   top: 15em;
-  left: 4em;
+  left: 7em;
   opacity: 1;
   transition: transform 3s ease;
+  box-shadow: 0 0 5px 3px rgba(154, 205, 50, 0.8),
+    0 0 8px 5px rgba(255, 255, 0, 0.6);
+  overflow: hidden;
+}
+
+
+.solarImage.new-class {
+  height: 98px;
 }
 
 .coin-flip {
@@ -355,9 +382,13 @@ span {
 
 .pointer {
   position: relative;
-  top: -2em;
+  top: -1em;
   left: -7em;
-  font-style: italic;
+  background: linear-gradient(135deg, black, green);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  box-shadow: 0 0 10px black;
 }
 
 .small-div.hidden-small-div .animationDiv {
