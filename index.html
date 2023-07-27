@@ -9,18 +9,31 @@
 </head>
 
 <body>
+  <div class="green-screen"></div>
   <div class="container">
     <div class="small-div">
-      <img style="position: relative;z-index: 1;" id="rightImage"
-        src="https://st.hzcdn.com/simgs/pictures/exteriors/18th-ave-city-homes-unit-c-mb-architecture-interiors-img~f8e1811b02588d32_14-2803-1-100fee4.jpg"
-        alt="Image">
-      <div  class="text-overlay">
-        GREEN <br>
-        <p class="subText">Future Envisioned</p>
+      <div class="image-container">
+        <img style="position: relative;" id="rightImage"
+          src="https://st.hzcdn.com/simgs/pictures/exteriors/18th-ave-city-homes-unit-c-mb-architecture-interiors-img~f8e1811b02588d32_14-2803-1-100fee4.jpg"
+          alt="Image">
+        <div class="text-container">
+          SOLUTIONS
+        </div>
+        <div>
+          <h2 class="addTextH1">Solutions</h2>
+          <h5 class="addTextH2">To powering home</h5>
+
+        </div>
       </div>
-      <button class="round-button" onclick="animateSmallDiv()">Click Here</button>
+      <div class="text-overlay">
+        GREEN <br>
+        <p class="subText">Future:Envisioned</p>
+      </div>
+      <button class="round-button coin-button" onclick="animateSmallDiv();flipCoin();">
+        <div class="arrow-right"></div> <span id="text"> Click.Click.</span>
+      </button>
     </div>
-    <div  class="large-div">
+    <div class="large-div">
       <div class="animationDiv">
         <div style="display: flex;margin-top: 15%;">
           <h2 style="position: relative;left: 1em;">Solar panels get energy from the sun</h2>
@@ -49,10 +62,10 @@
         </div>
       </div>
     </div>
+    <div>
+      <button class="fadeInButton" id="backButton" onclick="back()">Back</button>
+    </div>
     <div id="main-div">
-      <div>
-        <button id="backButton" onclick="back()">Back</button>
-      </div>
       <div>
         <h1 id="header"> Powering Home</h1>
       </div>
